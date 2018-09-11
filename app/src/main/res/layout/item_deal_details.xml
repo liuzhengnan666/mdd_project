@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="40dp"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/user_name"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="1111"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="5321.00"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="6.45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/selector_c_rectangle"
+        android:text="求购"
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+    </LinearLayout>
+</RelativeLayout>

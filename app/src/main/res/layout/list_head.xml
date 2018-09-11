@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/price_message"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pirce"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/max"
+                android:text="最高:"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/max"
+                android:text="0.00"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/min"
+                android:text="最低:"
+                android:layout_below="@id/max"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/max"
+                android:layout_toRightOf="@id/min"
+                android:text="0.00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toRightOf="@id/pirce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/range"
+                android:text="幅:"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/range"
+                android:text="50%"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/count"
+                android:text="量:"
+                android:layout_below="@id/range"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/range"
+                android:layout_toRightOf="@id/count"
+                android:text="0.00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/llc_system_text_size"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_button_white_m_clr"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="￥:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/check_out"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/buy"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="买入LLC"
+            android:background="@drawable/l_button_choose"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/sale"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="卖出LLC"
+            android:background="@drawable/shape_button_semicircle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_number"
+            android:maxLength="7"
+            android:inputType="number|numberDecimal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="请输入购买数量"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:background="@drawable/shape_white_cir_long"
+            android:layout_width="180dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/et_number"
+            android:id="@+id/et_price"
+            android:maxLength="7"
+            android:inputType="number|numberDecimal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="请输入购买价格"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:background="@drawable/shape_white_cir_long"
+            android:layout_width="180dp"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:text="购买"
+            android:background="@drawable/selector_oval"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

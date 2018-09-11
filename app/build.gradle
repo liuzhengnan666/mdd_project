@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.administrator.llc_p"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '28.0.1'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //注解框架
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.android.support:design:27.1.0'
+    //Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    //RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //Retrofit 支持Rxjava 的支持库
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    //Retrofit 支持gson 的支持库
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    //拦截器支持
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    //使用下拉刷新以及上拉加载库
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    //没有使用特殊Header，可以不加这行
+    //轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation files('libs/shiro-all-1.2.3.jar')
+}

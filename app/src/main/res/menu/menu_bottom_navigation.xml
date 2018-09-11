@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_shop"
+        android:icon="@mipmap/shop"
+        android:title="@string/menu_bottom_navigation_shop"
+        />
+    <item
+        android:id="@+id/item_mill"
+        android:icon="@mipmap/mill"
+        android:title="@string/menu_bottom_navigation_mill"
+        />
+
+    <item
+        android:id="@+id/item_deal"
+        android:icon="@mipmap/deal"
+        android:title="@string/menu_bottom_navigation_deal"
+        />
+    <item
+        android:id="@+id/item_my"
+        android:icon="@mipmap/my"
+        android:title="@string/menu_bottom_navigation_my"
+        />
+    <item
+        android:id="@+id/item_help"
+        android:icon="@mipmap/help"
+        android:title="@string/menu_bottom_navigation_help"
+        />
+</menu>

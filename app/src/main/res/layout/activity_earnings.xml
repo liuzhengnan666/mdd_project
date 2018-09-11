@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    tools:context=".activity.EarningsActivity">
+
+    <RelativeLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/f_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center"
+                android:background="@mipmap/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="挖矿收益"
+            android:textColor="@color/white"
+            android:textSize="@dimen/llc_system_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_marginTop="30dp"
+       android:background="@color/title_background"
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="50dp">
+       <TextView
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="10dp"
+           android:text="进入收益:"
+           android:textColor="@color/white"
+           android:textSize="@dimen/llc_system_text_size"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="10dp"
+           android:text="0"
+           android:textColor="@color/white"
+           android:textSize="@dimen/llc_system_text_size"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+</LinearLayout>

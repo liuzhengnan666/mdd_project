@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LLC_P</string>
+    <string name="menu_bottom_navigation_shop">算力商城</string>
+    <string name="menu_bottom_navigation_mill">我的矿机</string>
+    <string name="menu_bottom_navigation_deal">交易市场</string>
+    <string name="menu_bottom_navigation_my">个人中心</string>
+    <string name="menu_bottom_navigation_help">帮助中心</string>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TransferActivity">
+    <RelativeLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/f_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center"
+                android:background="@mipmap/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="转账"
+            android:textColor="@color/white"
+            android:textSize="@dimen/llc_system_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/target_id"
+        android:textColor="@color/white"
+        android:textSize="@dimen/llc_system_text_size"
+        android:text="对方账号:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:theme="@style/UpdateUserEditText"
+        android:layout_toRightOf="@+id/target_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/sure_target_id"
+            android:textColor="@color/white"
+            android:textSize="@dimen/llc_system_text_size"
+            android:text="确认密码:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            android:theme="@style/UpdateUserEditText"
+            android:layout_toRightOf="@+id/sure_target_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/llc_number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/llc_system_text_size"
+            android:text="LLC数量:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:theme="@style/UpdateUserEditText"
+            android:layout_toRightOf="@+id/llc_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/security_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/llc_system_text_size"
+            android:text="安全密码:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            android:theme="@style/UpdateUserEditText"
+            android:layout_toRightOf="@+id/security_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

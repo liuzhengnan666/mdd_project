@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    tools:context=".activity.HangRecordActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/f_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center"
+                android:background="@mipmap/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="挂单记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/llc_system_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/buy_hang_record"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="买入记录"
+            android:background="@drawable/l_button_choose"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/sale_hang_record"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="卖出记录"
+            android:background="@drawable/shape_button_semicircle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>
